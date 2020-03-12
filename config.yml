@@ -1,0 +1,16 @@
+title: GitHub Learning Session
+description: 'How to use GitHub more effectively '
+template:
+  repo: github-learning-session-template
+  name: github-learning-session
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
